@@ -23,7 +23,7 @@
     })
 </script>
 
-<div id='navbar' class="flex flex-col sm:flex-row justify-between container mx-auto m-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
+<div id='navbar' class="flex flex-col sm:flex-row justify-between mx-8 my-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
     <div class="flex flex-row items-center space-x-2 hover:cursor-default">
         <img src={logo} alt="logo" class="w-12 h-12 rounded-full" />
         <h1 class="text-2xl font-bold">Shreyash Raj</h1>
