@@ -40,10 +40,6 @@
 </button>
 
 <style>
-    * {
-        color: white;
-    }
-
     a {
         @apply relative;
     }

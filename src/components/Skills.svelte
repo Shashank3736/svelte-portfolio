@@ -47,9 +47,3 @@
     </div>
     <Down link="#project" />
 </div>
-
-<style>
-    * {
-        color: white;
-    }
-</style>
