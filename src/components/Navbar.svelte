@@ -1,8 +1,8 @@
-<div class="flex flex-row justify-between m-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
+<div class="flex flex-col sm:flex-row justify-between m-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
     <div class="flex flex-row items-center space-x-2">
         <h1 class="text-2xl font-bold">Shreyash Raj</h1>
     </div>
-    <div class="space-x-4 my-auto">
+    <div class="flex flex-wrap space-x-4 my-auto">
         <a href="/">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
