@@ -21,7 +21,7 @@
     })
 </script>
 
-<div id='navbar' class="flex flex-col sm:flex-row justify-between m-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
+<div id='navbar' class="flex flex-col sm:flex-row justify-between container mx-auto my-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
     <div class="flex flex-row items-center space-x-2">
         <h1 class="text-2xl font-bold">Shreyash Raj</h1>
     </div>
@@ -30,7 +30,6 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
     </div>
 </div>
 <button id='go-to-top' on:click={goTop} class="fixed right-4 bottom-4 z-50 hidden text-indigo-500 bg-white/20 p-4 rounded-full hover:cursor-pointer">
