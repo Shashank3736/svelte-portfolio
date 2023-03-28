@@ -1,40 +1,40 @@
 <script>
 	import Down from "./Down.svelte";
     const skills = [
-        'HTML',
         'CSS',
-        'JavaScript',
-        'Node.js',
+        'Git',
+        'SQL',
+        'HTML',
+        'Rust',
+        'NoSQL',
+        'Nginx',
+        'Linux',
+        'SQLite',
+        'GitHub',
         'Python',
-        'Data Structures',
+        'NextJS',
+        'Svelte',
+        'Django',
+        'Node.js',
+        'ReactJS',
+        'MongoDB',
+        'VS Code',
+        'Git Bash',
+        'REST API',
+        'MS Office',
+        'Bootstrap',
+        'C Language',
+        'PostgreSQL',
+        'JavaScript',
         'Algorithms',
         'TypeScript',
-        'ReactJS',
-        'NextJS',
         'TailwindCSS',
-        'Svelte',
-        'MongoDB',
-        'Django',
-        'Nginx',
-        'Bootstrap',
-        'REST API',
-        'Linux',
-        'Git',
-        'GitHub',
-        'Git Bash',
-        'VS Code',
-        'Rust',
         'LibreOffice',
-        'SQL',
-        'SQLite',
-        'PostgreSQL',
-        'NoSQL',
-        'C Language',
-        'MS Office',
+        'Data Structures',
     ]
 </script>
-<div id="skills" class="relative flex justify-center h-[100vh] p-4">
-    <div class="container overflow-auto sm:m-10 mb-20 p-10 border-4 border-white/40 rounded-xl bg-white/20">
+<div id="skills" class="relative flex justify-center h-[100vh] py-5 md:px-20">
+    <div class="container overflow-auto sm:m-20 sm:p-20 p-5 border-4 border-white/40 rounded-xl bg-white/20">
         <h1 class="text-4xl font-semibold text-center">Skills</h1>
         <hr class="my-4 border-2">
         <div class="flex flex-wrap justify-center">
