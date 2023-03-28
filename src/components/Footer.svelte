@@ -1,10 +1,12 @@
 <script>
+    import logo from "../assets/computer_geek.png"
     const year = new Date().getFullYear();
 </script>
 
 <footer class="text-white body-font bg-gray-700/80">
     <div class="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
     <div class="flex title-font font-medium items-center md:justify-start justify-center">
+        <img src={logo} alt="logo" class="w-10 h-10 rounded-full" />
         <span class="ml-3 text-xl">Shreyash Raj</span>
     </div>
     <p class="text-sm text-gray-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© {year} Shreyash Raj</p>

@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+    import logo from "../assets/computer_geek.png"
+
     const goTop = () => {
         window.scrollTo({
             top: 0,
@@ -22,7 +24,8 @@
 </script>
 
 <div id='navbar' class="flex flex-col sm:flex-row justify-between container mx-auto my-4 py-4 px-10 border-4 border-white/40 rounded-2xl backdrop-blur-xl bg-white/20 shadow-2xl">
-    <div class="flex flex-row items-center space-x-2">
+    <div class="flex flex-row items-center space-x-2 hover:cursor-default">
+        <img src={logo} alt="logo" class="w-12 h-12 rounded-full" />
         <h1 class="text-2xl font-bold">Shreyash Raj</h1>
     </div>
     <div class="flex flex-wrap space-x-4 my-auto">
