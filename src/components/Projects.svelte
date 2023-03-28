@@ -1,6 +1,7 @@
 <script lang='ts'>
 	// import Down from "./Down.svelte";
-
+    import caloriemeter from "../assets/caloriemeter.png";
+    import calapi from "../assets/cal-api.png";
     type Project = {
         name: string,
         description: string,
@@ -10,35 +11,17 @@
     }
     const projects: Project[] = [
         {
-            name: "Project 1",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-            image: "https://picsum.photos/600/400",
-            link: "https://google.com",
-            github: "https://github.com"
+            name: "Caloriemeter",
+            description: "A website made using NextJS, TailwindCSS, and Material UI. It is a calorie counter website that allows users to track their calories and save it. It uses a Calorimeter API to get the data.",
+            image: caloriemeter,
+            link: "https://cm.shreyashraj.com/",
+            github: "https://github.com/Shashank3736/caloriemeter"
         }, {
-            name: "Project 2",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-            image: "https://picsum.photos/600/400",
-            link: "https://google.com",
-            github: "https://github.com"
-        }, {
-            name: "Project 3",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-            image: "https://picsum.photos/600/400",
-            link: "https://google.com",
-            github: "https://github.com"
-        }, {
-            name: "Project 4",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-            image: "https://picsum.photos/600/400",
-            link: "https://google.com",
-            github: "https://github.com"
-        }, {
-            name: "Project 5",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-            image: "https://picsum.photos/600/400",
-            link: "https://google.com",
-            github: "https://github.com"
+            name: "Caloriemeter API",
+            description: "A REST API made using Python and Django. It is a REST API that allows users to get, post, update, and delete data from the database. Allow them to read, create and update user, create tokens and add and delete foods.",
+            image: calapi,
+            link: "https://api.cm.shreyashraj.com/api/",
+            github: "https://github.com/Shashank3736/caloriemeter"
         }
     ]
 </script>
@@ -47,13 +30,13 @@
     <div class="bg-white/20 m-10 p-10 border-4 border-white/40 rounded-xl">
         <h1 class="text-4xl font-semibold text-center">Projects</h1>
         <hr class="my-4 border-2">
-        <div class="flex flex-row space-x-4 overflow-x-scroll relative">
+        <div class="flex flex-row space-x-4 overflow-x-auto relative">
             {#each projects as project}
-                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 w-96 shadow-lg gradient-bg">
+                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 w-96 shrink-0 shadow-lg gradient-bg">
                     <h1 class="text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center">{project.description}</p>
-                    <img src={project.image} alt={project.name} class="w-full h- h-40 object-cover rounded-lg">
+                    <img src={project.image} alt={project.name} class="w-full object-cover rounded-lg">
                     <div class='flex flex-row space-x-8 items-center justify-center'>
                         <a class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded" href={project.github}>GitHub</a>
                         <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded" href={project.link}>Live</a>
