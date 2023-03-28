@@ -1,5 +1,5 @@
 <script>
-    import { About, Navbar, Contact, Skills, Projects, ProgressBar } from "../components"
+    import { About, Navbar, Contact, Skills, Projects, ProgressBar, Footer } from "../components"
 </script>
 
 <ProgressBar />
@@ -8,3 +8,4 @@
 <Skills />
 <Projects />
 <Contact />
+<Footer />
