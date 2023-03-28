@@ -32,7 +32,7 @@
     });
 </script>
 
-<div id='about' class="flex flex-col md:flex-row relative min-h-full overflow-visible">
+<div id='about' class="flex flex-col md:flex-row relative min-h-full overflow-visible container mx-auto">
     <!-- My Information -->
     <div class="w-[100vw] md:w-1/2 flex justify-center items-center">
         <div class="relative mx-4 md:mx-20 border-4 border-white/60 text-white p-10 rounded-2xl bg-white/20">
