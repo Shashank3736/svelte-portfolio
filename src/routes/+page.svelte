@@ -1,7 +1,8 @@
 <script>
-    import { About, Navbar, Contact, Skills, Projects } from "../components"
+    import { About, Navbar, Contact, Skills, Projects, ProgressBar } from "../components"
 </script>
 
+<ProgressBar />
 <Navbar />
 <About />
 <Skills />
