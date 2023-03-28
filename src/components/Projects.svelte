@@ -26,13 +26,13 @@
     ]
 </script>
 
-<div id='project' class="relative p-5 container mx-auto min-h-full">
-    <div class="bg-white/20 m-10 p-10 border-4 border-white/40 rounded-xl">
+<div id='project' class="relative sm:p-5 container mx-auto min-h-full">
+    <div class="bg-white/20 md:m-10 md:p-10 border-4 border-white/40 rounded-xl">
         <h1 class="text-4xl font-semibold text-center">Projects</h1>
         <hr class="my-4 border-2">
-        <div class="flex flex-row space-x-4 overflow-x-auto relative">
+        <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 2 ? "": "lg:justify-center")}>
             {#each projects as project}
-                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 w-96 shrink-0 shadow-lg gradient-bg">
+                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 min-w-[280px] shrink-0 w-96 shadow-lg gradient-bg">
                     <h1 class="text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center">{project.description}</p>
