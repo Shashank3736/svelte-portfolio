@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import Down from "./Down.svelte";
+	// import Down from "./Down.svelte";
 
     type Project = {
         name: string,
@@ -47,9 +47,9 @@
     <div class="bg-white/20 m-10 p-10 border-4 border-white/40 rounded-xl">
         <h1 class="text-4xl font-semibold text-center">Projects</h1>
         <hr class="my-4 border-2">
-        <div class="flex flex-row space-x-4 overflow-x-auto relative">
+        <div class="flex flex-row space-x-4 overflow-x-scroll relative">
             {#each projects as project}
-                <div class="bg-white/40 m-5 p-5 space-y-4 rounded-lg border-2 w-96 shadow-lg">
+                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 w-96 shadow-lg gradient-bg">
                     <h1 class="text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center">{project.description}</p>
@@ -62,8 +62,12 @@
             {/each}
         </div>
     </div>
-    <Down link="#contact" />
+    <!-- <Down link="#contact" /> -->
 </div>
 
 <style>
+    .gradient-bg {
+        background: rgb(2,15,91);
+        background: linear-gradient(135deg, rgba(2,15,91,1) 0%, rgba(4,23,163,1) 38%, rgba(0,0,74,1) 64%, rgba(45,82,145,1) 100%);
+   }
 </style>
