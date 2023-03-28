@@ -32,12 +32,12 @@
     });
 </script>
 
-<div id='about' class="flex flex-col md:flex-row relative h-full">
+<div id='about' class="flex flex-col md:flex-row relative h-full overflow-visible">
     <!-- My Information -->
     <div class="w-[100vw] md:w-1/2 flex justify-center items-center">
-        <div class="relative mx-20 border-4 border-white/60 text-white p-10 rounded-2xl bg-white/20">
-            <h1 class="relative text-4xl font-semibold text-center">About {#if visible}
-                <span class="text-4xl font-semibold text-center" transition:typewriter={{ speed: 1 }}>Shreyash Raj</span>
+        <div class="relative mx-4 md:mx-20 border-4 border-white/60 text-white p-10 rounded-2xl bg-white/20">
+            <h1 class="relative lg:text-4xl md:text-2xl text-xl font-semibold text-center">About {#if visible}
+                <span class="lg:text-4xl md:text-2xl text-xl font-semibold text-center" transition:typewriter={{ speed: 1 }}>Shreyash Raj</span>
             {/if}</h1>
             <hr class="my-4 border-2">
             <p class="text-lg font-medium md:text-xl">
@@ -50,7 +50,7 @@
         </div>
     </div>
     <!-- Image -->
-    <div class="w-[100vw] md:w-1/2 flex justify-center items-center"> 
+    <div class="w-[100vw] md:w-1/2 hidden md:flex justify-center items-center"> 
         <img class="w-96 h-96 rounded-full shadow-xl border-4 border-white/10" src={icon} alt="icon" />
     </div>
     <Down link='#skills' />
