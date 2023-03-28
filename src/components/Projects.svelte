@@ -32,7 +32,7 @@
         <hr class="my-4 border-2">
         <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 2 ? "": "lg:justify-center")}>
             {#each projects as project}
-                <div class="gradient-bg m-5 p-5 space-y-4 rounded-lg border-2 min-w-[280px] shrink-0 w-96 shadow-lg gradient-bg">
+                <div class="gradient-bg grow m-5 p-5 space-y-4 rounded-lg border-2 w-[280px] shrink-0 shadow-lg gradient-bg">
                     <h1 class="text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center">{project.description}</p>
