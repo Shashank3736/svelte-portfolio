@@ -38,7 +38,7 @@
         <hr class="my-4 border-2">
         <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 2 ? "": "lg:justify-center")}>
             {#each projects as project}
-                <div class="gradient-bg flex flex-col p-5 space-y-4 rounded-lg border-2 min-w-[288px] max-w-md shrink-0 shadow-lg hover:shadow-2xl">
+                <div class="gradient-bg flex flex-col grow p-5 space-y-4 rounded-lg border-2 min-w-[300px] max-w-[18rem] shrink-0 shadow-lg hover:shadow-2xl">
                     <h1 class="text-2xl md:text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center grow">{project.description}</p>
@@ -56,12 +56,12 @@
 
 <style>
     .gradient-bg {
-        background: rgb(2,15,91);
-        background: linear-gradient(135deg, rgba(2,15,91,1) 0%, rgba(4,23,163,1) 38%, rgba(0,0,74,1) 64%, rgba(45,82,145,1) 100%);
-        background-size: 500% 500%;
+        background: rgb(4,23,163,1);
     }
     
     .gradient-bg:hover {
+        background: linear-gradient(135deg, rgba(2,15,91,1) 0%, rgba(4,23,163,1) 38%, rgba(0,0,74,1) 64%, rgba(45,82,145,1) 100%);
+        background-size: 500% 500%;
         animation: gradient 5s ease infinite;
    }
 
