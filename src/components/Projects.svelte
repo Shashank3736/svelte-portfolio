@@ -22,6 +22,12 @@
             image: calapi,
             link: "https://api.cm.shreyashraj.com/api/",
             github: "https://github.com/Shashank3736/caloriemeter"
+        }, {
+            name: 'captcha-canvas',
+            description: 'A captcha generator by using skia-canvas. It creates captchas which OCR can\'t read. It is made using TypeScript and Skia Canvas.',
+            image: 'https://raw.githubusercontent.com/Shashank3736/captcha-canvas/master/examples/example.png',
+            link: 'https://www.npmjs.com/package/captcha-canvas',
+            github: 'https://github.com/Shashank3736/captcha-canvas'
         }
     ]
 </script>
@@ -32,10 +38,10 @@
         <hr class="my-4 border-2">
         <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 2 ? "": "lg:justify-center")}>
             {#each projects as project}
-                <div class="gradient-bg grow m-5 p-5 space-y-4 rounded-lg border-2 w-[280px] shrink-0 shadow-lg gradient-bg">
-                    <h1 class="text-3xl font-bold text-center">{project.name}</h1>
+                <div class="gradient-bg flex flex-col p-5 space-y-4 rounded-lg border-2 min-w-[288px] max-w-md shrink-0 shadow-lg hover:shadow-2xl">
+                    <h1 class="text-2xl md:text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
-                    <p class="text-center">{project.description}</p>
+                    <p class="text-center grow">{project.description}</p>
                     <img src={project.image} alt={project.name} class="w-full object-cover rounded-lg">
                     <div class='flex flex-row space-x-8 items-center justify-center'>
                         <a class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded" href={project.github}>GitHub</a>
@@ -52,5 +58,22 @@
     .gradient-bg {
         background: rgb(2,15,91);
         background: linear-gradient(135deg, rgba(2,15,91,1) 0%, rgba(4,23,163,1) 38%, rgba(0,0,74,1) 64%, rgba(45,82,145,1) 100%);
+        background-size: 500% 500%;
+    }
+    
+    .gradient-bg:hover {
+        animation: gradient 5s ease infinite;
    }
+
+   @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 </style>
