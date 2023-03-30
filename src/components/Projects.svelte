@@ -36,9 +36,9 @@
     <div class="bg-white/20 md:m-10 md:p-10 border-4 border-white/40 rounded-xl">
         <h1 class="text-4xl font-semibold text-center">Projects</h1>
         <hr class="my-4 border-2">
-        <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 2 ? "": "lg:justify-center")}>
+        <div class={"flex flex-row space-x-4 overflow-x-auto relative " + (projects.length > 3 ? "": "xl:justify-center ") + (projects.length > 2 ? "" : "lg:justify-center")}>
             {#each projects as project}
-                <div class="gradient-bg flex flex-col grow p-5 space-y-4 rounded-lg border-2 min-w-[300px] max-w-[18rem] shrink-0 shadow-lg hover:shadow-2xl">
+                <div class="gradient-bg flex flex-col grow scale-90 transition ease-in-out delay-150 duration-300 hover:scale-100 p-5 space-y-4 rounded-lg border-2 min-w-[300px] max-w-[18rem] shrink-0 shadow-lg hover:shadow-2xl">
                     <h1 class="text-2xl md:text-3xl font-bold text-center">{project.name}</h1>
                     <hr class="my-4 border-2">
                     <p class="text-center grow">{project.description}</p>
