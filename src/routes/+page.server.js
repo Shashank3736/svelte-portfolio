@@ -22,7 +22,7 @@ export async function load() {
             }
           }
         }
-        skills(first: 100) {
+        skills(orderBy: name_ASC, first: 100) {
           name
         }
       }
