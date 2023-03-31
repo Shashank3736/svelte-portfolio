@@ -15,8 +15,14 @@ export async function load() {
           description {
             html
           }
+          skill_used {
+            ... on Skill {
+              id
+              name
+            }
+          }
         }
-        skills {
+        skills(first: 100) {
           name
         }
       }
