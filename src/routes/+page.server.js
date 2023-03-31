@@ -17,8 +17,6 @@ export async function load() {
           }
         }
         skills {
-          id
-          level
           name
         }
       }
