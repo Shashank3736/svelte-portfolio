@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"graphql": "^16.6.0",
-		"graphql-request": "^5.2.0"
+		"graphql-request": "^5.2.0",
+		"moment": "^2.29.4"
 	}
 }
