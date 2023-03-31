@@ -34,9 +34,7 @@
     // ]
 
     type Skills = {
-        id: String,
         name: String,
-        level: "Beginner" | "Intermediate" | "Advanced"
     }
 
     export let skills: Skills[];
