@@ -1,37 +1,5 @@
 <script lang='ts'>
 	import Down from "./Down.svelte";
-    // const skills = [
-    //     'CSS',
-    //     'Git',
-    //     'SQL',
-    //     'HTML',
-    //     'Rust',
-    //     'NoSQL',
-    //     'Nginx',
-    //     'Linux',
-    //     'SQLite',
-    //     'GitHub',
-    //     'Python',
-    //     'NextJS',
-    //     'Svelte',
-    //     'Django',
-    //     'Node.js',
-    //     'ReactJS',
-    //     'MongoDB',
-    //     'VS Code',
-    //     'Git Bash',
-    //     'REST API',
-    //     'MS Office',
-    //     'Bootstrap',
-    //     'C Language',
-    //     'PostgreSQL',
-    //     'JavaScript',
-    //     'Algorithms',
-    //     'TypeScript',
-    //     'TailwindCSS',
-    //     'LibreOffice',
-    //     'Data Structures',
-    // ]
 
     type Skills = {
         name: String,
