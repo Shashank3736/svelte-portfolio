@@ -30,9 +30,9 @@
     </div>
     <div class="flex flex-wrap space-x-4 my-auto">
         <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
+        <a href="/blog">Blogs</a>
+        <a href="/#skills">Skills</a>
+        <a href="/#project">Projects</a>
     </div>
 </div>
 <button id='go-to-top' on:click={goTop} class="fixed right-4 bottom-4 z-50 hidden text-indigo-500 bg-white/20 p-4 rounded-full hover:cursor-pointer">
