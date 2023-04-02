@@ -5,10 +5,9 @@
         const pageProgressBar:(HTMLElement | null) = document.querySelector(".progress-bar");
         document.addEventListener("scroll", () => {
             if(pageProgressBar === null) return;
-            const totalHeight = document.body.scrollHeight - document.body.clientHeight;
+            const totalHeight = document.body.scrollHeight - window.screen.height;
             const currentScrollPosition = window.scrollY;
             const percentage = (currentScrollPosition / totalHeight) * 100;
-            console.log(percentage);
             pageProgressBar.style.width = `${percentage}%`;
         });
     })
