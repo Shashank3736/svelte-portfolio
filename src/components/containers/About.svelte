@@ -1,6 +1,6 @@
 <script>
-    import icon from "../assets/computer_geek.png"
-	import Down from "./Down.svelte";
+    import icon from "../../assets/computer_geek.png"
+	import Down from "../Down.svelte"
     import { onMount } from "svelte";
     let visible = false;
 

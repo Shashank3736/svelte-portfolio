@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import logo from "../assets/computer_geek.png"
+    import logo from "../../assets/computer_geek.png"
 
     const goTop = () => {
         window.scrollTo({
