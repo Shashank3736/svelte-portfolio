@@ -24,8 +24,8 @@
                 <a href="/blog/{blog.slug}/" class="md:absolute bottom-2 right-2 mt-4 text-blue-300 font-bold text-lg rounded-md hover:bg-white/20 px-4 py-2">Read More >></a>
                 <a href="/blog/{blog.slug}/" class="max-w-[354px] shrink-0 relative rounded-xl show-div">
                     <div class="visible-div absolute top-0 left-0 rounded-xl items-center justify-center backdrop-blur-md w-full h-full">
-                        <p class="text-2xl font-bold">
-                            {moment(blog.publishedAt).format("MMMM Do YYYY")}
+                        <p class="text-xl font-bold">
+                            {moment(blog.firstPublish).format("MMMM Do YYYY, hh:mm a")}
                         </p>
                     </div>
                     <img src={blog.thumbnail.url} alt={blog.title} class="object-cover rounded-xl">

@@ -4,18 +4,18 @@ import { request, gql } from "graphql-request";
 export async function load() {
     const query = gql`
     query MyQuery {
-        blogs {
-          publishedAt
-          slug
-          title
-          description {
-            html
-          }
-          thumbnail {
-            url
-          }
+      blogs(orderBy: firstPublish_DESC) {
+        description {
+          html
         }
+        slug
+        firstPublish
+        thumbnail {
+          url
+        }
+        title
       }
+    }
     `;
 
     const data = await request(GRAPHQL_API, query);
