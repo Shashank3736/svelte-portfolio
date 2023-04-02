@@ -1,4 +1,5 @@
 import { GRAPHQL_API } from "$env/static/private";
+import { error } from "@sveltejs/kit";
 import { request, gql } from "graphql-request";
 
 export async function load({ params }) {
@@ -20,5 +21,6 @@ export async function load({ params }) {
 
     const data = await request(GRAPHQL_API, query);
 
+    if (!data.blog) throw error(404)
     return data.blog;
 }
