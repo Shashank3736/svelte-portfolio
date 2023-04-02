@@ -22,8 +22,8 @@
         {#each data.blogs as blog}
             <div class="flex flex-col-reverse relative md:flex-row p-4 border-4 w-full h-min border-white/40 rounded-xl bg-white/20">
                 <a href="/blog/{blog.slug}/" class="md:absolute bottom-2 right-2 mt-4 text-blue-300 font-bold text-lg rounded-md hover:bg-white/20 px-4 py-2">Read More >></a>
-                <a href="/blog/{blog.slug}/" class="max-w-[354px] shrink-0 relative rounded-xl show-div">
-                    <div class="visible-div absolute top-0 left-0 rounded-xl items-center justify-center bg-black/70 w-full h-full">
+                <a href="/blog/{blog.slug}/" class="max-w-[354px] shrink-0 relative rounded-xl show-div overflow-hidden">
+                    <div class="visible-div absolute top-0 left-0 rounded-xl z-10 items-center justify-center bg-black/70 w-full h-full">
                         <p class="text-xl font-bold">
                             {moment(blog.firstPublish).format("MMMM Do YYYY, hh:mm a")}
                         </p>
@@ -51,5 +51,9 @@
     }
     .show-div:hover .visible-div {
         display: flex;
+    }
+
+    .show-div:hover img {
+        @apply scale-125 transition ease-in-out delay-150 duration-500;
     }
 </style>
