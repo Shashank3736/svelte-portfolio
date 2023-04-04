@@ -3,7 +3,7 @@
         title: string,
         description: {html: string},
         thumbnail: { url: string }
-        link: string,
+        live: string,
         github: string,
         id: string,
         skill_used: { name: string, id: string }[]
@@ -42,7 +42,7 @@
                     </div>
                     <div class='flex flex-row space-x-8 items-center justify-center'>
                         <a class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded" href={focus_project.github}>GitHub</a>
-                        <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded cursor-pointer" href={focus_project.link}>Live</a>
+                        <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded" href={focus_project.live}>Live</a>
                     </div>
                     </div>
             </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div class='flex flex-row space-x-8 items-center justify-center'>
                         <a class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded" href={project.github}>GitHub</a>
-                        <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded cursor-pointer" href={project.link}>Live</a>
+                        <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded" href={project.live}>Live</a>
                     </div>
                     <div class='flex flex-col'>
                         <button on:click={() => show_project(projects[i])} class="rounded-md px-4 py-2 hidden md:block font-medium hover:bg-orange-400/90 border-2 transition ease-in-out delay-150 duration-300">Show Details</button>
