@@ -67,7 +67,7 @@
                         <a class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded cursor-pointer" href={project.link}>Live</a>
                     </div>
                     <div class='flex flex-col'>
-                        <button on:click={() => show_project(projects[i])} class="rounded-md px-4 py-2 hidden md:block font-medium bg-orange-400/90">Show Details</button>
+                        <button on:click={() => show_project(projects[i])} class="rounded-md px-4 py-2 hidden md:block font-medium hover:bg-orange-400/90 border-2 transition ease-in-out delay-150 duration-300">Show Details</button>
                         <h1 class="text-xl font-bold my-2 md:hidden">Skills used:</h1>
                         <div class="flex flex-wrap md:hidden">
                             {#each project.skill_used as skill}
