@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import Down from "./Down.svelte";
+	import Down from "../Down.svelte";
 
     type Skills = {
         name: String,

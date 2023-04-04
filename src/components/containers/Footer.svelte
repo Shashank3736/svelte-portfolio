@@ -1,5 +1,5 @@
 <script>
-    import logo from "../assets/computer_geek.png"
+    import logo from "../../assets/computer_geek.png"
     const year = new Date().getFullYear();
 </script>
 
