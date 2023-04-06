@@ -1,6 +1,6 @@
 <script>
-    import { About, Skills, Projects } from "../components";
-    export let data;
+	import { About, Skills, Projects } from '../components';
+	export let data;
 </script>
 
 <About />
