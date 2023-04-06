@@ -3,27 +3,27 @@
 	const year = new Date().getFullYear();
 </script>
 
-<footer class="text-white body-font bg-gray-700/80">
-	<div class="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
-		<div class="flex title-font font-medium items-center md:justify-start justify-center">
-			<img src={logo} alt="logo" class="w-10 h-10 rounded-full" />
+<footer class="body-font bg-gray-700/80 text-white">
+	<div class="container mx-auto flex flex-col items-center px-5 py-2 sm:flex-row">
+		<div class="title-font flex items-center justify-center font-medium md:justify-start">
+			<img src={logo} alt="logo" class="h-10 w-10 rounded-full" />
 			<span class="ml-3 text-xl">Shreyash Raj</span>
 		</div>
 		<p
-			class="text-sm text-gray-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+			class="mt-4 text-sm text-gray-300 sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4"
 		>
 			© {year} Shreyash Raj
 		</p>
-		<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+		<span class="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
 			<a
-				class="p-3 rounded-full hover:bg-white/20 hover:text-blue-500"
+				class="rounded-full p-3 hover:bg-white/20 hover:text-blue-500"
 				href="https://discord.gg/MurmgRTkDy"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					x="0px"
 					y="0px"
-					class="w-5 h-5"
+					class="h-5 w-5"
 					fill="currentColor"
 					viewBox="0 0 50 50"
 				>
@@ -33,7 +33,7 @@
 				</svg>
 			</a>
 			<a
-				class="p-3 rounded-full hover:bg-white/20 hover:text-blue-500"
+				class="rounded-full p-3 hover:bg-white/20 hover:text-blue-500"
 				href="https://twitter.com/Shashank3736"
 			>
 				<svg
@@ -41,7 +41,7 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
-					class="w-5 h-5"
+					class="h-5 w-5"
 					viewBox="0 0 24 24"
 				>
 					<path
@@ -50,7 +50,7 @@
 				</svg>
 			</a>
 			<a
-				class="p-3 rounded-full hover:bg-white/20 hover:text-pink-500"
+				class="rounded-full p-3 hover:bg-white/20 hover:text-pink-500"
 				href="https://www.instagram.com/G8RajShreyash/"
 			>
 				<svg
@@ -59,7 +59,7 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
-					class="w-5 h-5"
+					class="h-5 w-5"
 					viewBox="0 0 24 24"
 				>
 					<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -67,7 +67,7 @@
 				</svg>
 			</a>
 			<a
-				class="p-3 rounded-full hover:bg-white/20 hover:text-blue-500"
+				class="rounded-full p-3 hover:bg-white/20 hover:text-blue-500"
 				href="https://www.linkedin.com/in/shreyash-raj-994b92249/"
 			>
 				<svg
@@ -76,7 +76,7 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="0"
-					class="w-5 h-5"
+					class="h-5 w-5"
 					viewBox="0 0 24 24"
 				>
 					<path

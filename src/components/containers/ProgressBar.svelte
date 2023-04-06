@@ -17,6 +17,6 @@
 
 <style>
 	.progress-bar {
-		@apply fixed top-0 left-0 z-50 w-0 h-1 bg-white;
+		@apply fixed top-0 left-0 z-50 h-1 w-0 bg-white;
 	}
 </style>

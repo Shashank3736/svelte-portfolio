@@ -20,32 +20,32 @@
 </script>
 
 {#if focus_project}
-	<div class="fixed top-0 left-0 w-screen h-screen z-[1000]">
+	<div class="fixed top-0 left-0 z-[1000] h-screen w-screen">
 		<div
 			on:click={() => show_project(null)}
 			on:keypress={() => show_project(null)}
-			class="flex justify-center items-center bg-black/70 w-full h-full py-4"
+			class="flex h-full w-full items-center justify-center bg-black/70 py-4"
 		>
 			<div
 				on:click|stopPropagation={() => true}
 				on:keypress={() => show_project(null)}
-				class="gradient-bg flex flex-col md:flex-row p-10 rounded-lg border-2 container relative overflow-y-scroll max-h-[90vh]"
+				class="gradient-bg container relative flex max-h-[90vh] flex-col overflow-y-scroll rounded-lg border-2 p-10 md:flex-row"
 			>
 				<button
 					on:click={() => show_project(null)}
-					class="absolute top-0 right-0 m-4 p-4 font-medium hover:bg-white/20 rounded-full"
+					class="absolute top-0 right-0 m-4 rounded-full p-4 font-medium hover:bg-white/20"
 					>X</button
 				>
-				<div class="flex justify-center items-center">
+				<div class="flex items-center justify-center">
 					<img
 						src={focus_project.thumbnail.url}
 						alt={focus_project.title}
 						class="max-w-[384px] rounded-xl"
 					/>
 				</div>
-				<div class="flex flex-col ml-4 justify-center items-center space-y-4">
+				<div class="ml-4 flex flex-col items-center justify-center space-y-4">
 					<div class="prose-invert">
-						<h1 class="text-2xl font-bold text-center">{focus_project.title}</h1>
+						<h1 class="text-center text-2xl font-bold">{focus_project.title}</h1>
 						<hr class="my-4 border-2" />
 						{@html focus_project.description.html}
 					</div>
@@ -53,19 +53,19 @@
 					<div class="flex flex-wrap">
 						{#each focus_project.skill_used as skill}
 							<div
-								class="m-2 px-4 py-2 border-2 min-w-[100px] text-center transition ease-in-out duration-500 delay-150 hover:bg-white hover:shadow-lg hover:text-indigo-600 hover:scale-110 border-white/40 rounded-xl cursor-default"
+								class="m-2 min-w-[100px] cursor-default rounded-xl border-2 border-white/40 px-4 py-2 text-center transition delay-150 duration-500 ease-in-out hover:scale-110 hover:bg-white hover:text-indigo-600 hover:shadow-lg"
 							>
 								{skill.name}
 							</div>
 						{/each}
 					</div>
-					<div class="flex flex-row space-x-8 items-center justify-center">
+					<div class="flex flex-row items-center justify-center space-x-8">
 						<a
-							class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded"
+							class="rounded bg-gray-700/80 px-4 py-2 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-gray-700"
 							href={focus_project.github}>GitHub</a
 						>
 						<a
-							class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded"
+							class="rounded bg-indigo-700/80 px-4 py-2 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-indigo-700"
 							href={focus_project.live}>Live</a
 						>
 					</div>
@@ -74,50 +74,50 @@
 		</div>
 	</div>
 {/if}
-<div id="project" class="relative sm:p-5 container mx-auto min-h-full">
-	<div class="bg-white/20 md:m-10 md:p-10 border-4 border-white/40 rounded-xl">
-		<h1 class="text-4xl font-semibold text-center">Projects</h1>
+<div id="project" class="container relative mx-auto min-h-full sm:p-5">
+	<div class="rounded-xl border-4 border-white/40 bg-white/20 md:m-10 md:p-10">
+		<h1 class="text-center text-4xl font-semibold">Projects</h1>
 		<hr class="my-4 border-2" />
 		<div
-			class={'flex flex-row space-x-4 overflow-x-auto relative ' +
+			class={'relative flex flex-row space-x-4 overflow-x-auto ' +
 				(projects.length > 3 ? '' : 'xl:justify-center ') +
 				(projects.length > 2 ? '' : 'lg:justify-center')}
 		>
 			{#each projects as project, i}
 				<div
-					class="gradient-bg flex flex-col overflow-y-auto max-h-[550px] grow scale-90 transition ease-in-out delay-150 duration-300 hover:scale-100 p-5 space-y-4 rounded-lg border-2 min-w-[300px] max-w-[18rem] shrink-0 shadow-lg hover:shadow-2xl"
+					class="gradient-bg flex max-h-[550px] min-w-[300px] max-w-[18rem] shrink-0 grow scale-90 flex-col space-y-4 overflow-y-auto rounded-lg border-2 p-5 shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-100 hover:shadow-2xl"
 				>
-					<h1 class="text-2xl md:text-3xl font-bold text-center">{project.title}</h1>
+					<h1 class="text-center text-2xl font-bold md:text-3xl">{project.title}</h1>
 					<hr class="my-4 border-2" />
-					<p class="text-center grow">{@html project.description.html}</p>
+					<p class="grow text-center">{@html project.description.html}</p>
 					<div class="overflow-hidden rounded-lg">
 						<img
 							src={project.thumbnail.url}
 							alt={project.title}
-							class="w-full hover:scale-125 transition ease-in-out delay-150 duration-300 object-cover rounded-lg"
+							class="w-full rounded-lg object-cover transition delay-150 duration-300 ease-in-out hover:scale-125"
 						/>
 					</div>
-					<div class="flex flex-row space-x-8 items-center justify-center">
+					<div class="flex flex-row items-center justify-center space-x-8">
 						<a
-							class="bg-gray-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-gray-700 px-4 py-2 rounded"
+							class="rounded bg-gray-700/80 px-4 py-2 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-gray-700"
 							href={project.github}>GitHub</a
 						>
 						<a
-							class="bg-indigo-700/80 transition ease-in-out delay-150 duration-300 hover:scale-110 hover:bg-indigo-700 px-4 py-2 rounded"
+							class="rounded bg-indigo-700/80 px-4 py-2 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-indigo-700"
 							href={project.live}>Live</a
 						>
 					</div>
 					<div class="flex flex-col">
 						<button
 							on:click={() => show_project(projects[i])}
-							class="rounded-md px-4 py-2 hidden md:block font-medium hover:bg-orange-400/90 border-2 transition ease-in-out delay-150 duration-300"
+							class="hidden rounded-md border-2 px-4 py-2 font-medium transition delay-150 duration-300 ease-in-out hover:bg-orange-400/90 md:block"
 							>Show Details</button
 						>
-						<h1 class="text-xl font-bold my-2 md:hidden">Skills used:</h1>
+						<h1 class="my-2 text-xl font-bold md:hidden">Skills used:</h1>
 						<div class="flex flex-wrap md:hidden">
 							{#each project.skill_used as skill}
 								<div
-									class="m-2 px-4 py-2 border-2 min-w-[100px] text-center transition ease-in-out duration-500 delay-150 hover:bg-white hover:shadow-lg hover:text-indigo-600 hover:scale-110 border-white/40 rounded-xl cursor-default"
+									class="m-2 min-w-[100px] cursor-default rounded-xl border-2 border-white/40 px-4 py-2 text-center transition delay-150 duration-500 ease-in-out hover:scale-110 hover:bg-white hover:text-indigo-600 hover:shadow-lg"
 								>
 									{skill.name}
 								</div>

@@ -31,17 +31,17 @@
 
 <div
 	id="about"
-	class="flex flex-col md:flex-row relative min-h-screen overflow-visible container mx-auto"
+	class="container relative mx-auto flex min-h-screen flex-col overflow-visible md:flex-row"
 >
 	<!-- My Information -->
-	<div class="w-[100vw] md:w-1/2 flex justify-center items-center">
+	<div class="flex w-[100vw] items-center justify-center md:w-1/2">
 		<div
-			class="relative mx-4 md:mx-20 border-4 border-white/60 text-white p-10 rounded-2xl bg-white/20"
+			class="relative mx-4 rounded-2xl border-4 border-white/60 bg-white/20 p-10 text-white md:mx-20"
 		>
-			<h1 class="relative lg:text-4xl md:text-2xl text-xl font-semibold text-center">
+			<h1 class="relative text-center text-xl font-semibold md:text-2xl lg:text-4xl">
 				About {#if visible}
 					<span
-						class="lg:text-4xl md:text-2xl text-xl font-semibold text-center"
+						class="text-center text-xl font-semibold md:text-2xl lg:text-4xl"
 						transition:typewriter={{ speed: 1 }}>Shreyash Raj</span
 					>
 				{/if}
@@ -57,8 +57,8 @@
 		</div>
 	</div>
 	<!-- Image -->
-	<div class="w-[100vw] md:w-1/2 hidden md:flex justify-center items-center">
-		<img class="w-96 h-96 rounded-full shadow-xl border-4 border-white/10" src={icon} alt="icon" />
+	<div class="hidden w-[100vw] items-center justify-center md:flex md:w-1/2">
+		<img class="h-96 w-96 rounded-full border-4 border-white/10 shadow-xl" src={icon} alt="icon" />
 	</div>
 	<Down link="#skills" />
 </div>
