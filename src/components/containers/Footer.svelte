@@ -89,7 +89,7 @@
 			<a 
 				class="rounded-full p-3 hover:bg-white/20 hover:text-blue-500"
 				rel="me" 
-				href="https://toot.io/@shashank3736"
+				href="https://fosstodon.org/@shashank3736"
 			>
 				<svg
 					fill="currentColor" 
