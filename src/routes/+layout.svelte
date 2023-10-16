@@ -5,7 +5,7 @@
 	inject();
 </script>
 
-<div id="main" class="dark:bg-slate-800 dark:text-white bg-slate-300 min-h-screen">
+<div id="main" class="min-h-screen bg-slate-300 dark:bg-slate-800 dark:text-white">
 	<ProgressBar />
 	<Navbar />
 	<slot />
