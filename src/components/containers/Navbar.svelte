@@ -1,26 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
 	import logo from '../../assets/computer_geek.png';
-
-	const goTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-	};
-	onMount(() => {
-		window.addEventListener('scroll', () => {
-			const top_button = document.getElementById('go-to-top');
-			const navbar = document.getElementById('navbar');
-			if (top_button === null) return;
-			if (navbar === null) return;
-			if (navbar.getBoundingClientRect().bottom < 0) {
-				top_button.classList.remove('hidden');
-			} else {
-				top_button.classList.add('hidden');
-			}
-		});
-	});
 </script>
 
 <div id="navbar" class="container mx-auto py-4">
@@ -38,22 +17,6 @@
 			<a href="/#project">Projects</a>
 		</div>
 	</div>
-	<button
-		id="go-to-top"
-		on:click={goTop}
-		class="fixed right-4 bottom-4 z-50 hidden rounded-full bg-white/20 p-4 text-indigo-500 hover:cursor-pointer"
-	>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke-width="2"
-			stroke="currentColor"
-			class="h-6 w-6"
-		>
-			<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-		</svg>
-	</button>
 </div>
 
 <style>
