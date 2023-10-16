@@ -5,5 +5,6 @@ import Projects from './containers/Projects.svelte';
 import Contact from './containers/Contact.svelte';
 import ProgressBar from './containers/ProgressBar.svelte';
 import Footer from './containers/Footer.svelte';
+import DarkMode from './containers/DarkMode.svelte';
 
-export { Navbar, About, Skills, Projects, Contact, ProgressBar, Footer };
+export { Navbar, About, Skills, Projects, Contact, ProgressBar, Footer, DarkMode };

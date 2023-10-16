@@ -1,10 +1,11 @@
 <script>
 	import logo from '../../assets/computer_geek.png';
+	import DarkMode from './DarkMode.svelte';
 </script>
 
 <div id="navbar" class="container mx-auto py-4">
 	<div
-		class="flex flex-col justify-between rounded-2xl border-4 border-white/40 bg-white/20 py-4 px-10 shadow-2xl backdrop-blur-xl sm:flex-row"
+		class="flex flex-col justify-between rounded-2xl border-4 border-white/40 bg-white/20 py-4 px-10 shadow-2xl backdrop-blur-xl sm:flex-row items-center"
 	>
 		<div class="flex cursor-default flex-row items-center space-x-2">
 			<img src={logo} alt="logo" class="h-12 w-12 rounded-full" />
@@ -16,6 +17,7 @@
 			<a href="/#skills">Skills</a>
 			<a href="/#project">Projects</a>
 		</div>
+		<DarkMode />
 	</div>
 </div>
 
