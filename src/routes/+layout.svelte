@@ -5,7 +5,10 @@
 	inject();
 </script>
 
-<div id="main" class="min-h-screen from-slate-100 to-slate-300 dark:from-slate-500 dark:to-slate-900 bg-gradient-to-tr da dark:text-white">
+<div
+	id="main"
+	class="da min-h-screen bg-gradient-to-tr from-slate-100 to-slate-300 dark:from-slate-500 dark:to-slate-900 dark:text-white"
+>
 	<ProgressBar />
 	<Navbar />
 	<slot />
