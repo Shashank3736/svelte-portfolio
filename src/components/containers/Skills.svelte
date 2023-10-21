@@ -2,7 +2,7 @@
 	import Down from '../Down.svelte';
 
 	type Skills = {
-		name: String;
+		name: string;
 	};
 
 	export let skills: Skills[];

@@ -3,7 +3,7 @@
 </script>
 
 <a href={link} class="absolute bottom-0 left-1/2 hidden translate-x-[-50%] py-4 sm:flex">
-	<div class="left-0 right-0 mx-auto animate-bounce rounded-full bg-white/20 p-4 text-white">
+	<div class="left-0 right-0 mx-auto animate-bounce rounded-full bg-white/20 p-4">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

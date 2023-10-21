@@ -5,18 +5,12 @@
 	inject();
 </script>
 
-<div id="main" class="gradient_bg min-h-screen">
+<div
+	id="main"
+	class="da min-h-screen bg-gradient-to-tr from-slate-100 to-slate-300 dark:from-slate-500 dark:to-slate-900 dark:text-white"
+>
 	<ProgressBar />
 	<Navbar />
 	<slot />
 	<Footer />
 </div>
-
-<style>
-	.gradient_bg {
-		width: 100%;
-		background: linear-gradient(45deg, #1d4ed8, #db2777, #3730a3, #ea580c);
-		background-size: 800% 800%;
-		animation: gradient 15s ease infinite;
-	}
-</style>

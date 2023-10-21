@@ -35,9 +35,7 @@
 >
 	<!-- My Information -->
 	<div class="flex w-[100vw] items-center justify-center md:w-1/2">
-		<div
-			class="relative mx-4 rounded-2xl border-4 border-white/60 bg-white/20 p-10 text-white md:mx-20"
-		>
+		<div class="relative mx-4 rounded-2xl border-4 border-white/60 bg-white/20 p-10 md:mx-20">
 			<h1 class="relative text-center text-xl font-semibold md:text-2xl lg:text-4xl">
 				About {#if visible}
 					<span
